@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Ninfa's Mexican Restaurant | Waco, TX</title>
+<meta name="description" content="Visit Ninfa's Mexican Restaurant at 220 South 3rd Street in downtown Waco, TX. Call 254-757-2050 or send us a message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Lato:wght@400;700;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.contact-form { max-width: 640px; margin: 0 auto; }
+.contact-form label { display:block; font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.5px; color:var(--maroon); margin-bottom:6px; }
+.contact-form input, .contact-form textarea {
+  width:100%; padding:13px 16px; margin-bottom:20px; border:2px solid var(--cream-dark); border-radius:10px;
+  font-family:'Lato',sans-serif; font-size:1rem; background:var(--white); color:var(--ink);
+}
+.contact-form input:focus, .contact-form textarea:focus { outline:none; border-color:var(--gold); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Ninfa's Mexican Restaurant"></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="drink-menu.html">Drink Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:2547572050" class="btn btn-outline">254-757-2050</a>
+      <a href="https://www.ninfaswaco.com/stores" class="btn btn-primary" target="_blank" rel="noopener">Order Online</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="background-image:url('images/food/don-quixote.jpg');">
+  <div class="inner container">
+    <span class="eyebrow">We'd Love to See You</span>
+    <h1>Visit Us in Downtown Waco</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Address</h3>
+        <p>220 South 3rd Street<br>Waco, Texas 76701</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=220%20South%203rd%20street%2C%20Waco%2C%20Texas%2C%2076701" class="btn btn-outline" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <div class="info-card">
+        <h3>Phone</h3>
+        <p><a href="tel:2547572050">254-757-2050</a></p>
+        <a href="tel:2547572050" class="btn btn-outline">Call Now</a>
+      </div>
+      <div class="info-card">
+        <h3>Hours</h3>
+        <p>Sun &ndash; Thu: 11:00am &ndash; 9:00pm<br>Fri &ndash; Sat: 11:00am &ndash; 10:00pm</p>
+        <p style="margin-top:6px;font-size:0.88rem;">Happy Hour 2&ndash;6pm Mon&ndash;Thu, 2&ndash;4pm Fri</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <iframe class="map-embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=220%20South%203rd%20Street%2C%20Waco%2C%20TX%2076701&z=15&output=embed"
+      title="Map to Ninfa's Mexican Restaurant, 220 South 3rd Street, Waco, TX"></iframe>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Send Us a Message</h2>
+      <p>Questions about catering, private events, or anything else? Send us a note and we'll get back to you.</p>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/logo.png" alt="Ninfa's Mexican Restaurant"></div>
+        <p>Bringing Mama Ninfa's original 1973 recipes to downtown Waco &mdash; sizzling fajitas, handmade tortillas, and real Tex-Mex on South 3rd Street.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/NinfasWaco/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/ninfaswaco/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="drink-menu.html">Drink Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="catering.html">Catering &amp; Private Events</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>220 South 3rd Street<br>Waco, TX 76701</p>
+        <p><a href="tel:2547572050">254-757-2050</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Sun &ndash; Thu: 11am &ndash; 9pm<br>Fri &ndash; Sat: 11am &ndash; 10pm</p>
+        <p>Happy Hour: 2&ndash;6pm Mon&ndash;Thu, 2&ndash;4pm Fri</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Texas Rodco Waco Inc, dba Ninfa's Mexican Restaurant. All rights reserved. &middot; <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var message = document.getElementById('message').value;
+  var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\n' + message;
+  // NOTE for the Ninfa's team: add the restaurant's real inbox address below (or wire this form
+  // to a form backend like Formspree) before launch. Left blank intentionally so this never
+  // sends to a guessed address.
+  window.location.href = 'mailto:?subject=Website Contact Form&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
