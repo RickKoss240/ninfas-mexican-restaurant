@@ -363,6 +363,16 @@
 document.getElementById('navToggle').addEventListener('click', function(){
   document.getElementById('navLinks').classList.toggle('open');
 });
+
+function setMenuNavOffset(){
+  var nav = document.querySelector('.menu-nav');
+  if (nav) {
+    document.documentElement.style.setProperty('--nav-h', (nav.getBoundingClientRect().height + 20) + 'px');
+  }
+}
+setMenuNavOffset();
+window.addEventListener('load', setMenuNavOffset);
+window.addEventListener('resize', setMenuNavOffset);
 </script>
 </body>
 </html>
