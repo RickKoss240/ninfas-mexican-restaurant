@@ -540,14 +540,16 @@ section { padding: 90px 0; }
   border: 2px solid rgba(244, 182, 90, 0.4);
   box-shadow: var(--shadow);
 }
-.facebook-feed-embed { display: flex; justify-content: center; }
+.facebook-feed-embed { display: flex; justify-content: center; width: 100%; }
 .facebook-feed-embed-frame {
   position: relative;
   padding: 14px;
   background: var(--white);
   border-radius: var(--radius-lg);
   box-shadow: 0 20px 45px -14px rgba(0,0,0,0.45);
-  width: 100%;
+  /* Facebook Page Plugin content is capped at 500px. Match the frame to it
+     so the white card never leaves an unused strip beside the live feed. */
+  width: min(100%, 528px);
 }
 .facebook-feed-embed-frame::before {
   content: "";
@@ -558,6 +560,7 @@ section { padding: 90px 0; }
   background: linear-gradient(135deg, var(--gold), var(--maroon));
 }
 .facebook-feed-embed-frame .fb-page,
+.facebook-feed-embed-frame .fb-page > span,
 .facebook-feed-embed-frame iframe {
   max-width: 100%;
   border-radius: calc(var(--radius-md) - 4px);
