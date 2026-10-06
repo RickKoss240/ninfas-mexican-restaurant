@@ -435,3 +435,45 @@ section { padding: 90px 0; }
    background-image: url("ninfas-texture-1.jpg");
    background-repeat: repeat;
 }
+
+
+/* ---------- Tan-row texture override (section-alt rows use the second texture) ---------- */
+.section-alt.textured-row {
+  background-image: url("ninfas-texture-2.jpg");
+  background-repeat: repeat;
+}
+
+/* ---------- Full-height framed photo for the Mama Taught Us row ---------- */
+@media (min-width: 861px) {
+  .bleed-split.sticky-media .bleed-media {
+    position: sticky;
+    top: 81px;
+    height: calc(100vh - 81px);
+    align-self: start;
+  }
+}
+
+/* ---------- Live Facebook feed ---------- */
+.facebook-feed {
+  background-color: var(--maroon);
+  background-image: var(--grain);
+  color: var(--white);
+}
+.facebook-feed .script { color: var(--gold-light); }
+.facebook-feed-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 80px 24px;
+}
+.facebook-feed-text p { color: #f3e9d8; max-width: 480px; }
+.facebook-feed-embed { display: flex; justify-content: center; }
+.facebook-feed-embed .fb-page, .facebook-feed-embed iframe { max-width: 100%; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow); }
+@media (max-width: 860px) {
+  .facebook-feed-grid { grid-template-columns: 1fr; gap: 32px; padding: 56px 24px; text-align: center; }
+  .facebook-feed-text p { margin-left: auto; margin-right: auto; }
+  .facebook-feed-embed { justify-content: center; }
+}
